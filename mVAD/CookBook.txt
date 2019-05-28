@@ -1,0 +1,49 @@
+﻿The process of training Voice Activity Detector consists of three main STEPs.
+The first one is training data preparation (implemented im Matlab).
+The second is the DNN learning (implemented in Troch framework).
+The third one is export of the model back into Matlab.
+NOTE: The VAD network is already trained and stored in mVAD\sharedData.
+
+These scripts were run on following versions of SW: Matlab R2014a, Torch7, Lua 5.1.5, Cuda 7.5
+
+STEP1_dataPreparation
+
+	script_01_CHiME3_simulate_data_patched
+		- This script is based on original CHiME3_simulate_data.m script [1], 
+		some of the scripts in the utils directory are therefore under GNU 3 license [2].
+		- The script prepares spectrograms of noise, clear speech and mixture which are saved to path specified in "myPth".
+		- "chimeDataPath" specifies the location of CHiME data folder.
+		
+	script_02_getStatsandDataSets
+		- This script computes the normalization statistics, randomly splits data into training and validation data sets and prepares binary files for NNET training process.
+		- "PTH" is path to mat files prepared by preceding step.
+		- "sharedPth" is directory where statistics will be saved.
+		- "binPth" is target directory for training binaries (approx. 20 GB of disk space is required and 32 GB RAM).	
+	
+STEP2_Torch
+
+	script_03_train_sig
+		- To train the VAD network, you need to change the "mainPath" in script "STEP2_Torch/scripts/settings_sigOut.lua" to the actual location of "STEP2_Torch" directory.
+		- Then run script "step_03_train_sig.lua".
+		- We would like to thank Lukáš Matějů for his kind advice and help with the implementation of Torch sctipts 
+		(feed-forward neural networks training implementation can be found at [3]).
+
+STEP3_exportAndUse
+
+	script_04_prepare_NETpack
+		- This scripts converts .nnet file of the network into Matlab object.
+		- To run the script change path to the .nnet file on line 8; set path to the normalization statistics (path to the shared directory) on line 16; and set the path to the shared directory on line 30 so the matlab model is stored there.
+  
+	script_05_useVAD
+		- This script shows, how to call the VAD.
+		- Variable "recording" specifies whole path to the processed audio file.
+		- Path given on line 10 leads to saved matlab model.
+		
+The output of the VAD network are 2 masks joined in one matrix (the first one is "voice activity detector", the second one is "noise activity dector").
+The size of the matrix is (2 x stft bin number) x (stft frame number).
+In our case it is 2*257 x stft frame number.
+
+
+[1] http://spandh.dcs.shef.ac.uk/chime_challenge/chime2015/index.html
+[2] http://www.gnu.org/licenses/gpl.txt
+[3] https://github.com/1shark1/nnet.

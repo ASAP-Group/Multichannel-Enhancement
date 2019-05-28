@@ -1,0 +1,46 @@
+Author(s): Zbynìk Koldovský, Jiøí Málek, Marek Boháè
+Technical University of Liberec
+Studentská 1402/2, LIBEREC
+Czech Republic
+
+This is unpublished proprietary source code of TECHNICAL UNIVERSITY OF
+LIBEREC, CZECH REPUBLIC.
+
+The purpose of this software is the dissemination of scientific work for
+scientific use. The commercial distribution or use of this source code is
+prohibited. The copyright notice does not evidence any actual or intended
+publication of this code. Term and termination:
+
+This license shall continue for as long as you use the software. However,
+it will terminate if you fail to comply with any of its terms and
+conditions. You agree, upon termination, to discontinue using, and to
+destroy all copies of, the software.  Redistribution and use in source and
+binary forms, with or without modification, are permitted provided that
+the following conditions are met:
+
+Redistributions of source code must retain the above copyright notice,
+this list of conditions and the following disclaimer (Limitation of
+warranties and liability). Redistributions in binary form must reproduce
+the above copyright notice, this list of conditions and the following
+disclaimer (Limitation of warranties and liability) in the documentation
+and/or other materials provided with the distribution. Neither name of
+copyright holders nor the names of its contributors may be used to endorse
+or promote products derived from this software without specific prior
+written permission.
+
+The limitations of warranties and liability set out below shall continue
+in force even after any termination.
+
+Limitation of warranties and liability:
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE HEREBY
+DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT,
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS  OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.  

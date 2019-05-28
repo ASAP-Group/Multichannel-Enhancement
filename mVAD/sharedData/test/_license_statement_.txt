@@ -1,0 +1,5 @@
+The recordings in this directory are part of the CHiME4 challenge data [1],
+which are under the Creative Commons Attribution-Non.
+
+[1] http://spandh.dcs.shef.ac.uk/chime_challenge/chime2016/data.html
+[2] https://creativecommons.org/licenses/by-nc-sa/2.0/uk/

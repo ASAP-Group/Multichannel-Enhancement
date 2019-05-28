@@ -1,0 +1,12 @@
+The following scripts and data were released by authors of CHiME3 challenge [1]
+and therefore are subject to GNU3 license [2]:
+
+apply_ir.m, bark2frq.m, clable.m, equal_filter.mat,
+erb2frq.m, estimate_ir.m, filtbank.m, frq2bark.m,
+frq2mel.m, istft_multi.m, json2mat.m, localize.m,
+localize_MESSL.m, mat2json.m, mel2frq.m, melbankm.m,
+prepIRs.m, stft_multi.m, viterbi.m, xticksi.m,
+xyzticksi.m, yticksi.m
+
+[1] http://spandh.dcs.shef.ac.uk/chime_challenge/chime2015/index.html
+[2] http://www.gnu.org/licenses/gpl.txt
