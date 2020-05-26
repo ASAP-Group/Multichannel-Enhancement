@@ -2,13 +2,13 @@
 
 This project is an implementation of the multi-channel enhancement technique described in the paper:
 
-Jiri Malek, Zbynek Koldovsky, Marek Bohac, "Block-Online Multi-Channel Speech Enhancement Using DNN-supported Relative Transfer Function Estimates".
+Jiri Malek, Zbynek Koldovsky and Marek Bohac, “Block-Online Multi-Channel Speech Enhancement Using DNN-Supported Relative Transfer Function Estimates”, IET Signal Processing, vol. 14, no. 3, pp. 124–133, May 2020.
 
 The paper is available on arXiv:
 
 http://arxiv.org/abs/1905.03632
 
-Please cite the arXiv version of the publication, if you use the beamformer in your scientific research.
+Please cite the above stated reference, if you use the beamformer in your scientific research.
 
 The technique is intended for enhancement of multi-channel speech recordings with single active speaker and real-world background noise.
 
